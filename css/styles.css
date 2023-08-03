@@ -41,11 +41,33 @@ body {
 .card {
   max-width: 350px;
   margin-bottom: 40px;
+  position: relative;
+}
+
+.card .hover-info {
+  position: absolute;
+  text-align: center;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100px;
+  background-color: rgba(0,0,0,0.9); /* полупрозрачный черный фон */
+  color: white; /* белый текст */
+  display: flex;
+  justify-content: center; /* центрируем текст по горизонтали */
+  align-items: center; /* центрируем текст по вертикали */
+  opacity: 0; /* сделать div невидимым по умолчанию */
+  transition: opacity 0.5s; /* плавное появление текста */
+}
+
+.card:hover .hover-info {
+  opacity: 1; /* делает div видимым при наведении */
 }
 
 .card img {
   width: 100%;
   height: auto;
+  display: block;
 }
 
 @media screen and (max-width: 600px) {
@@ -58,6 +80,10 @@ body {
   }
   .card {
     margin-bottom: 20px;
+  }
+  .card .hover-info {
+    height: 50px;
+    font-size: 10px;
   }
 }
   
