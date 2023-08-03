@@ -70,6 +70,23 @@ body {
   display: block;
 }
 
+/* Контакты */
+.footer {
+  margin-top: 50px;
+  height: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: black;
+}
+
+.footer a {
+    color: inherit;      /* наследовать цвет текста от родителя */
+    text-decoration: none; /* убрать подчеркивание */
+    background-color: transparent; /* прозрачный фон */
+    cursor: pointer; /* изменить курсор на указатель */
+}
+
 @media screen and (max-width: 600px) {
   .container .heading {
     margin-top: 20px;
