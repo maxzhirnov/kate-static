@@ -51,7 +51,7 @@ body {
   left: 0;
   width: 100%;
   height: 100px;
-  background-color: rgba(0,0,0,0.9); /* полупрозрачный черный фон */
+  background-color: rgba(0,0,0,0.8); /* полупрозрачный черный фон */
   color: white; /* белый текст */
   display: flex;
   justify-content: center; /* центрируем текст по горизонтали */
@@ -74,6 +74,9 @@ body {
   .container .heading {
     margin-top: 20px;
   }
+  .container .heading h1 {
+    font-size: 20px;
+  }
   .container .items {
     gap: 20px;
     padding: 0 20px 0 20px;
@@ -84,6 +87,12 @@ body {
   .card .hover-info {
     height: 50px;
     font-size: 10px;
+    display: none;
+
+  }
+
+  .hover-info.visible {
+    display: flex;
   }
 }
   
