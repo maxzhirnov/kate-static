@@ -1,0 +1,63 @@
+@font-face {
+  font-family: "Courier Prime";
+  src: url('/static/Courier_Prime/CourierPrime-Regular.ttf') format('truetype');
+}
+
+
+body {
+    font-family: Arial, sans-serif;
+  }
+  
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Заголовок */
+
+
+.container .heading {
+  margin-top: 80px;
+  margin-bottom: 30px;
+}
+
+.container .heading h1 {
+  text-align: center;
+  font-size: 40;
+  font-family: "Courier Prime", Courier, monospace;
+  font-weight: 100;
+  color: #555151;
+}
+
+
+/* Картины */
+
+.container .items {
+  display: flex;
+  gap: 40px;
+}
+
+.card {
+  max-width: 350px;
+  margin-bottom: 40px;
+}
+
+.card img {
+  width: 100%;
+  height: auto;
+}
+
+@media screen and (max-width: 600px) {
+  .container .heading {
+    margin-top: 20px;
+  }
+  .container .items {
+    gap: 20px;
+    padding: 0 20px 0 20px;
+  }
+  .card {
+    margin-bottom: 20px;
+  }
+}
+  
