@@ -6,6 +6,7 @@
 
 body {
     font-family: Arial, sans-serif;
+    background-color: #FAF9F6;
   }
   
 .container {
@@ -17,12 +18,12 @@ body {
 /* Заголовок */
 
 
-.container .heading {
-  margin-top: 80px;
+header {
+  margin-top:50px;
   margin-bottom: 30px;
 }
 
-.container .heading h1 {
+header h1 {
   text-align: center;
   font-size: 40;
   font-family: "Courier Prime", Courier, monospace;
@@ -71,7 +72,7 @@ body {
 }
 
 /* Контакты */
-.footer {
+footer {
   margin-top: 50px;
   height: 100px;
   display: flex;
@@ -80,18 +81,18 @@ body {
   color: black;
 }
 
-.footer a {
-    color: inherit;      /* наследовать цвет текста от родителя */
-    text-decoration: none; /* убрать подчеркивание */
-    background-color: transparent; /* прозрачный фон */
-    cursor: pointer; /* изменить курсор на указатель */
+footer a {
+  color: inherit;      /* наследовать цвет текста от родителя */
+  text-decoration: none; /* убрать подчеркивание */
+  background-color: transparent; /* прозрачный фон */
+  cursor: pointer; /* изменить курсор на указатель */
 }
 
 @media screen and (max-width: 600px) {
-  .container .heading {
+  header {
     margin-top: 20px;
   }
-  .container .heading h1 {
+  header h1 {
     font-size: 20px;
   }
   .container .items {
